@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Vanguard CF";
+    /* font-family: "Copyright Klim Type Foundry"; */
+    -webkit-scrollbar: none;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-color: #f8f8f8;
+    /* background-color: red; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.navbar img {
+    width: 40px;
+    height: 5vh;
+}
+
+.navbar i {
+    position: fixed;
+    right: 3%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .text {
+    /* position: relative; */
+    /* background-color: red; */
+    padding: 80px 100px;
+    width: 100%;
+}
+
+.enlarge {
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+}
+
+.enlarge h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    align-items: center;
+    font-size: 190px;
+    line-height: 150px;
+    font-weight: 600;
+    /* transform: translateY(110%); */
+    /* background-color: rgba(97, 96, 96, 0.373); */
+}
+
+.text p {
+    position: absolute;
+    right: 7%;
+    font-family: "Copyright Klim Type Foundry";
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.svg {
+    position: fixed;
+    top: 40%;
+    right: 1%;
+}
+
+.sections {
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.sections .section {
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 90px;
+}
+
+.sections .section:nth-child(2n) {
+    justify-content: flex-start;
+}
+
+.sections .insider {
+    width: 750px;
+    height: 650px;
+    /* background-color: red; */
+}
+
+.section .insider .ttxt {
+    padding: 10px 0px;
+    height: 12%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.insider .ttxt h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.insider .ttxt p {
+    font-family: "Copyright Klim Type Foundry";
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.section .img {
+    width: 100%;
+    height: 88%;
+    /* background-color:bisque ; */
+    position: relative;
+    overflow: hidden;
+}
+
+.section .img img {
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all 2s ease-in-out;
+}
+
+.section .img img:hover {
+    transform: scale(1.1);
+    transition: all 1.5s ease-in-out;
+}
+
+
+.main .footer {
+    padding: 90px 100px;
+    margin-top: 100px;
+    /* background-color: red; */
+}
+
+.main .footer h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.fttxtmain{
+    display: flex;
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+} 
+
+.ft{
+    /* background-color: red; */
+    margin-left: 15px;
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    animation: animate 10s linear infinite ;
+   
+    justify-content: space-between;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-330px);
+    }
+    100%{
+        transform: translateY(50px);
+
+    }
+}
+.ft h1{
+    margin-top: 30px;
+}
+
+.ft1{
+    height: 70px;
+    width: 400px;
+    margin-top: 20px;
+    /* position: relative; */
+    /* background-color: yellow; */
+    overflow: hidden;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+.circle {
+    /* padding: 90px 100px; */
+    position: relative;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: all 0.5s ease-out;
+}
+
+.circle p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+
+.lower {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    margin-top: 100px;
+}
+
+.lower h3 {
+    font-family: "Copyright Klim Type Foundry";
+}
+
+.lower p {
+    font-family: "Copyright Klim Type Foundry";
+    font-size: 12px;
+}
+
+
+.semicircle {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    transition: all .3s ease-out;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+
+
+.scrolltop {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+
+.scrolltop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.move {
+    position: fixed;
+    background-color: #564fcd;
+    top: 200px;
+    left: 50%;
+    display: none;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-out;
+    pointer-events: none;
+    border-radius: 50%;
+    /* background: #fff; */
+
+
+}
+
+.move svg {
+    /* background-color:yellow; */
+    width: 140px;
+
+}
+
+
+.move svg:nth-child(1) {
+    animation: an 5s linear infinite both;
+    border-radius: 50%;
+}
+
+@keyframes an {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+       transform: rotate(360deg);
+    }   
+}
+
+.move svg:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+}
+
+
+
+/* .text22{
+position: absolute;
+    width: 0;
+    height: 0;
+    -webkit-transition: opacity .2s,height .6s cubic-bezier(.165, .84, .44, 1),width .6s cubic-bezier(.165, .84, .44, 1);
+    transition: opacity .2s,height .6s cubic-bezier(.165, .84, .44, 1),width .6s cubic-bezier(.165, .84, .44, 1);
+
+} */

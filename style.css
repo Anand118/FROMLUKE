@@ -1,0 +1,507 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* box-sizing: inherit; */
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Vanguard CF";
+    /* font-family: "Copyright Klim Type Foundry"; */
+    -webkit-scrollbar: none;
+    /* transition: all 2s linear both; */
+    position: relative;
+    line-height: 1.7;
+}
+
+/* .start{
+    height: 100vh;
+    width: 100%;
+    background-color: #021118;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.start .c1{
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    animation: loader 2s linear both;
+}
+
+@keyframes loader {
+    0%{
+        height: 20px;
+        width: 20px;
+        background-color: #414040;
+        border-radius: 10px solid #fff;
+    }
+    30%{
+        height: 100px;
+        width: 100px;
+        background-color: #c8b7b7;
+        border: 20px solid #fff;
+    }
+    60%{
+        height: 50px;
+        width: 50px;
+    }
+    100%{
+        height: 2px;
+        width: 2px;
+    }
+    
+} */
+
+
+.cover{
+    background-color: hsl(199, 85%, 5%);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999999;
+}
+
+.cover-heading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.cover-heading h1{
+    color: #d2b396;
+    font-size: 100px;
+    font-weight: 500;
+    display: inline-block;
+    font-family: "Silk Serif";
+    text-transform: uppercase;
+}
+.cover-heading span{
+    display: inline-block;
+    color: #d2b396;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.cover2{
+    background-color: #16313a;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+}
+.cover3{
+    background-color: #021118;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+}
+.cover4{
+    background-color: #b4865b;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+}
+
+.gorges{
+    background-color: rgb(95, 75, 75);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+}
+.gorges h1{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-20%,-50%);
+    display: inline-block;
+    font-size: 100px;
+    color: #f8f8f8;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Copyright Klim Type Foundry" ;
+    /* font-family: " MADE Bon Voyage"; */
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-color: #f8f8f8;
+    /* background-color: red; */
+    transition: all .3s ease-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.navbar img {
+    width: 40px;
+    height: 5vh;
+}
+
+.navbar i {
+    position: fixed;
+    right: 3%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-out;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.navbar .cancel{
+    display: none;
+}
+
+.navbar span{
+    z-index: 99;
+    position: fixed;
+    margin-right: 10px;
+    right: 25px;
+    width: 80px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #000;
+    display: none;
+}
+.cn{
+    display: flex;
+    color: #f8f8f8;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.cn h5{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Gilroy";
+
+} 
+
+.main .text {
+    padding: 80px 100px;
+    width: 100%;
+}
+
+.enlarge {
+    position: relative;
+    overflow: hidden;
+}
+
+.enlarge h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    align-items: center;
+    font-size: 190px;
+    line-height: 150px;
+    font-weight: 600;
+}
+
+.text p {
+    position: absolute;
+    right: 7%;
+    font-family: "Copyright Klim Type Foundry";
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.svg {
+    position: fixed;
+    top: 40%;
+    right: 1%;
+}
+
+.sections {
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.sections .section {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 90px;
+}
+
+.sections .section:nth-child(2n) {
+    justify-content: flex-start;
+}
+
+.sections .insider {
+    width: 750px;
+    height: 650px;
+}
+
+.section .insider .ttxt {
+    padding: 10px 0px;
+    height: 12%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.insider .ttxt h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.insider .ttxt p {
+    font-family: "Copyright Klim Type Foundry";
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.section .img {
+    width: 100%;
+    height: 88%;
+    position: relative;
+    overflow: hidden;
+}
+
+.section .img img {
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.section .img img:hover {
+    transform: scale(1.6);
+    transition: all 1.5s ease-in-out;
+}
+
+
+.main .footer {
+    padding: 90px 100px;
+    margin-top: 100px;
+}
+
+.main .footer h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.fttxtmain{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+} 
+
+.ft{
+    margin-left: 15px;
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    animation: animate 10s linear infinite ;
+   
+    justify-content: space-between;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-330px);
+    }
+    100%{
+        transform: translateY(50px);
+
+    }
+}
+.ft h1{
+    margin-top: 30px;
+}
+
+.ft1{
+    height: 70px;
+    width: 400px;
+    margin-top: 20px;
+    overflow: hidden;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+.circle {
+    position: relative;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: all 0.5s ease-out;
+}
+
+.circle p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+
+.lower {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    margin-top: 100px;
+}
+
+.lower h3 {
+    font-family: "Copyright Klim Type Foundry";
+}
+
+.lower p {
+    font-family: "Copyright Klim Type Foundry";
+    font-size: 12px;
+}
+
+
+.semicircle {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    transition: all .3s ease-out;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+
+
+.scrolltop {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    color: #b4865b;
+}
+
+.scrolltop:hover{
+    color: #fff;
+}
+
+.scrolltop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.move{
+    position: fixed;
+    /* background-color: #8f4c4c; */
+    top: 200px;
+    left: 50%;
+    z-index: 5;
+    display: none;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-out;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+
+.middle2{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    display: flex;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.move .middle2 svg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+}
+
+
+.move svg {
+    width: 140px;
+    pointer-events: none;
+}
+
+
+.move .wheel {
+    animation: an 10s linear infinite both;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+@keyframes an {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+       transform: rotate(360deg);
+    }   
+}
+
+
+/* .text22{
+position: absolute;
+    width: 0;
+    height: 0;
+    -webkit-transition: opacity .2s,height .6s cubic-bezier(.165, .84, .44, 1),width .6s cubic-bezier(.165, .84, .44, 1);
+    transition: opacity .2s,height .6s cubic-bezier(.165, .84, .44, 1),width .6s cubic-bezier(.165, .84, .44, 1);
+
+} */
